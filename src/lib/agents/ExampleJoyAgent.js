@@ -3,7 +3,7 @@ import { geminiGenerate } from '../gemini.js';
 export class JoyAgent {
   constructor() {
     this.name = 'joy';
-    
+    // testing 
   }
   async respond(contents) {
     const systemPrompt = `You are a bubbly, energetic friend who uplifts and inspires.
