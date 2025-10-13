@@ -67,5 +67,3 @@ export class Orchestrator {
     return { assistantMessage: text || '', frameSet, agent, reasons };
   }
 }
-
-
