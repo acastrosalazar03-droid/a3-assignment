@@ -12,17 +12,24 @@
   onMount(() => {});
 
   async function send() {
-    const content = input.trim();
+    // creates new variable based on what user typed in 
+    const content = input.trim(); // "the dog walked to the park"
+
+    // if content doesn't exist
     if (!content) return;
+
+    // variable declaration 
     messages = [...messages, { role: 'user', content }];
     input = '';
     isLoading = true;
     errorMsg = '';
+
     const res = await fetch('/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ history: messages })
     });
+
     const data = await res.json();
     if (!res.ok || data?.error) {
       errorMsg = data?.error || 'Request failed';

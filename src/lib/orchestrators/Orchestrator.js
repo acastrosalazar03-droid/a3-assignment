@@ -53,5 +53,3 @@ export class ExampleOrchestrator {
     return { assistantMessage: text || '', frameSet, agent, reasons };
   }
 }
-
-
