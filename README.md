@@ -41,7 +41,7 @@ Steps:
 - Copy your key and set environment values in `.env`:
 
 ```
-GEMINI_API_KEY=AIzaSyBAg3iMuEubW0CP3afZZKELe-uodcpTQLE
+GEMINI_API_KEY=uhhhh
 GEMINI_MODEL=gemini-2.5-flash
 ```
 
