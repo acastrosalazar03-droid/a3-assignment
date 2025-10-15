@@ -2,7 +2,7 @@ import { env } from '$env/dynamic/private';
 import { GoogleGenAI } from '@google/genai';
 
 export function hasGemini(overrideKey) {
-    return Boolean('AIzaSyBAg3iMuEubW0CP3afZZKELe-uodcpTQLE');
+    return Boolean(env.GEMINI_API_KEY || overrideKey);
 }
 
 export async function geminiGenerate({ contents, systemPrompt = '', config ={} }) {
